@@ -1,16 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <!-- src는 경로를 의미한다. -->
     <!-- alt는 대체 텍스트를 의미한다.
         (이미지가 깨졌을 경우 적용한 텍스트가 대체되어 나오기도 하고, 시각장애인의 경우 텍스트를 읽혀주는 역할도 한다.
-        반드시 기재 해 주어야 함. 기재하지 않을경우 웹표준법에 어긋남) -->
+        반드시 기재 해 주어야 함. 기재하지 않을 경우 웹표준법에 어긋남) -->
+
+
+    <!-- 1. 내 서버 또는 pc에 파일을 갖고 있는 방식 -->
+    <!-- 안정적이나 서버의 용량을 차지하고 웹 접근시 프래픽 발생 -->
     <img src="../img/우주.jpg" alt="우주이미지"><br>
     <img src="../img/하이볼.jpg" alt="최애술하이볼">
+
+
+    <!-- 2. 외부 링크를 통해 이미지를 사용하는 방시 -->
+    <!-- 링크 변경, 삭제 등으로 이미지 로드에 실패할 리스크가 있다. -->
+    <img src="https://newsimg.sedaily.com/2024/05/11/2D95AUYDYM_13.jpg" alt="카니발">
+
+
+    <!-- 웹에 맞게 가공한 이미지는 용량이 크지 않기 때문에 1번 방식을 주로 이용한다. -->
+
 </body>
+
 </html>
