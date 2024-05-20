@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cascading</title>
+    <!-- 초기화는 반드시 css 맨 위에 작성이 되어야 한다.  -->
+    <link rel="stylesheet" href="../reset.css">
+    <style></style>
+
+</head>
+<body>
+    <!-- css 우선순위  -->
+    <!-- 
+        ** 가장 기본규칙 **
+        - 나중에 선언된것이 높은 우선순위를 가진다.
+        - 작성 순서와 상관없이 tag < class < id 의 우선순위를 가진다.
+        - 부모로부터 상속받은 속성은 우선순위가 가장 낮다. (최하위권)
+     -->
+
+     <p class="부모">안녕하세요. 나는 <span class="자식">꼬꼬들엄마</span>에요</p>
+</body>
+</html>
