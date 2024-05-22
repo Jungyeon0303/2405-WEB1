@@ -11,11 +11,24 @@
             padding: 0;
         }
 
+        
         .box{
             background-color: pink;
             width: 100px;
             height: 100px;
             padding: 32px;
+
+            box-sizing: border-box;
+        /* contents-box : 크기 기준을 컨텐츠(파랑영역) 기준에서 패딩과 보더를 바깥쪽으로 붙인다.(개체가 밖으로 커진다) */
+        /* border-box : 크기 기준을 보더 바깥쪽으로 잡고, 패딩과 보더를 안쪽으로 붙인다. (개체크기 고정) */
+        }
+        
+        .box1 {
+            margin-bottom: 100px;
+        }
+
+        .box2 {
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -24,9 +37,27 @@
     <button>버튼</button>
     <button>버튼</button>
 
+    <div class="box box1">
+        컨텐츠
+    </div>
+    <div class="box box2">
+        컨텐츠
+    </div>
+    <!-- class 네임은 중복으로 넣어줄 수 있다. -->
     <div class="box">
         컨텐츠
     </div>
+
+    <!-- 
+        contents : 컨텐츠가 들어갈 컨텐츠 영역 (파랑)
+        padding : 컨텐츠와 보더사이의 내부여백 (초록)
+        border : 컨텐츠의 외곽 선 (여기까지 컨텐츠로 소속됨)
+        margin : 컨텐츠와 컨텐츠 사이의 외부 여백 
+                 (마진은 겹칠 수 있다. 영역을 공유하는 성질 = 더 큰 마진쪽 적용)
+     -->
+
+    <!-- 컨텐츠가 넘칠 때 처리하는 속성이 따로 있으며, 차 후에 배울 예정 -->
+
 
 </body>
 </html>
