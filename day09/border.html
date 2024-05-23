@@ -4,8 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Border</title> 
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .box1 {
+            width: 200px;
+            height: 200px;
+            background-color: beige;
+
+            border: 1px solid #222;
+            /* border를 구성하는 필수 3요소 : width, style, color */
+            /* style에 다양한 속성들이 많지만, 실무엔 99% solid만 쓰는 현실 */
+
+            border-radius: 20px;
+            /* 실무에서 많이 쓰는 속성 */
+            /* border-radius: 50%; 주면 원형을 만들 수 있음 */
+        }
+        .box2 {
+            width: 200px;
+            height: 200px;
+            background-color: rgb(141, 255, 207);
+
+            border: 1px solid #222;
+            border-radius: 50%;
+            /* 크기가 정사각형일 경우에만 50%가 원으로 적용
+               가로세로 사이즈가 다를 경우, 원형이 아닌 라운딩사각형이 나옴 */
+            
+            box-sizing: border-box;
+        }
+    </style>
 </head>
 <body>
-    
+    <div class="box1"></div>
+    <div class="box2"></div>
 </body>
 </html>
