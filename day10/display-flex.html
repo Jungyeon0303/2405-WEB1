@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+    <link rel="stylesheet" href="../reset.css">
+
+    <style>
+        .container {
+            border: 1px solid #222;
+            width: 800px;
+            height: 800px;
+
+            /* 나한테 소속된 자식요소들이 정렬할 수 있게 도와준다 */
+            display: flex;
+            /* 가로세로 정렬 */
+            justify-content: space-between;
+            align-items: flex-end;
+            /* flex-start, center, flex-end */
+            /* justify-content: space-between; 속성을 제일 많이 씀 */
+
+            gap: 24px;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border: 1px solid #222;
+            box-sizing: border-box;
+        }
+
+    </style>
+    
+</head>
+<body>
+    <!-- 
+        float는 내가 유령이 되는 속성이라면
+        flex는 내가 설정한데로 자식요소들을 정렬시킴
+     -->
+
+     <div class="container">
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+        <div class="box">BOX</div>
+     </div>
+</body>
+</html>
