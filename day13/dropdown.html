@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dropdown</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        label {
+            display: block;
+            cursor: pointer;
+        }
+
+        p {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked + p {
+            display: block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- 사용상 주의사항 -->
+    <!-- 앗! 뜨거!! -->
+
+    <label for="my-check">사용상 주의사항</label>
+    <input type="checkbox" name="" id="my-check">
+    <p>앗! 뜨거!! 화상을 입을 수 있어요</p>
+
+    <label for="my-copy">저작권</label>
+    <input type="checkbox" name="" id="my-copy">
+    <p>그딴건 없다우</p>
+</body>
+</html>
+<!-- 자바스크립트 없이 css로 dropdown을 만들 수 있는 유일한 방법이긴하나,
+     용도에 맞게 작업하는게 제일 좋긴하다. -->
