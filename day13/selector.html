@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selector</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+    </style>
+</head>
+<body>
+    <!--
+        * : 전체선택자, 초기화 용도로 사용한다. (margin 0, padding 0)
+        img : 태그선택자, 특정 태그를 초기화 하는데 사용 (img{display:block;} 등)
+        #img-id : 아이디선택자, 유니크한 값으로 높은 우선순위를 가진다.
+        .class : 킄ㄹ래스선택자, 가장 일반적으로 사용하는 형태
+     -->
+     <img id="img-id" class="img-class" src="주소" alt="대체텍스트">
+     
+     <div class="container">
+        <div class="hi hello">
+        <!-- div.hi.hello -->
+            <div class="bye"></div>
+        </div>
+     </div>
+     <!-- 
+        후손선택자 : [.container .bye](O) / container의 후손은 bye
+        자손(자식)선택자 : [.container . bye](X) / container의 자손은 hi hello
+        [.hi .bye](O) / [.hi > .bye](O)
+      -->
+     
+      <!-- 후손,자손 선택자는 css를 구조적으로 만들어 줄 수 있는 반면,
+           남용하게되면 유지보수가 힘들어질 수 있으니 너무 ㅁ낳은 단계를 쓰는것은 지양 -->
+
+      <!-- ★★★★★ 유용하게 사용하기 좋은 팁.. 붙여쓰기는 "and"
+        [.hi.hello] : 띄어쓰기의 중요성★
+        띄어쓰기가 있으면, 후손/자손선택자를 의미.
+        띄어쓰기가 없으면 "and"를 의미.
+        -->
+
+        <!-- 여기까지가 가장 기본적인 속성의 선택자들 -->
+
+
+        <input class="test-button" type="button" value="버튼">
+        <!-- 
+            [type] : 속성을 가진 개체를 대상으로 함
+            [type='button'] : 속성이 문자열과 같을 때
+            [type~='button'] : 띄어쓰기 구분해 해당 문자열이 포함되어있을 때
+            [type|='button'] : 속성이 문자열과 같거나, 문자열 뒤에 -(하이픈)이 붙어있을 때
+         -->
+</body>
+</html>
